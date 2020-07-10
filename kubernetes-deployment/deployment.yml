@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: guess-number-game
+  labels:
+    name: game
+spec:
+  selector:
+    matchLabels:
+      name: game
+  template:
+    metadata:
+      labels:
+        name: game
+    spec:
+      containers:
+        - name: game
+          image: ashusharma/guess-game:latest
+          ports:
+            - containerPort: 80
+  replicas: 3
