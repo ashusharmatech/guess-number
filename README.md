@@ -23,7 +23,7 @@ Pull the latest image of this game run:
 
 Deploy to your Kubernetes cluster:
 
-`kubectl create -f https://raw.githubusercontent.com/ashusharmatech/guess-number/master/kubernetes-deployments.yaml`
+`kubectl create -f https://raw.githubusercontent.com/ashusharmatech/guess-number/master/kubernetes-deployment.yaml`
 
 And setup an service to expose your guess-number server.
 
