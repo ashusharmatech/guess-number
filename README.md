@@ -30,7 +30,7 @@ And setup an service to expose your guess-number server.
 |-----------|--------------|-------------|-----------------------------|
 | NAMESPACE |     NAME     | TARGET PORT |             URL             |
 |-----------|--------------|-------------|-----------------------------|
-| default   | game-service |          80 | http://xx.xx.xx.xx:30080 |
+| default   | game-service |          80 | http://xx.xx.xx.xx:30080    |
 |-----------|--------------|-------------|-----------------------------|
 ```
 
