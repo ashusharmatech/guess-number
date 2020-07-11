@@ -19,3 +19,18 @@ spec:
           ports:
             - containerPort: 80
   replicas: 3
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: game-service
+spec:
+  ports:
+    - port: 80
+      nodePort: 30080
+      targetPort: 80
+  type: NodePort
+  selector:
+    name: game
