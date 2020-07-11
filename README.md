@@ -26,6 +26,14 @@ Deploy to your Kubernetes cluster:
 `kubectl create -f https://raw.githubusercontent.com/ashusharmatech/guess-number/master/kubernetes-deployment.yaml`
 
 And setup an service to expose your guess-number server.
+```
+|-----------|--------------|-------------|-----------------------------|
+| NAMESPACE |     NAME     | TARGET PORT |             URL             |
+|-----------|--------------|-------------|-----------------------------|
+| default   | game-service |          80 | http://xx.xx.xx.xx:30080 |
+|-----------|--------------|-------------|-----------------------------|
+```
+
 
 ##
 
