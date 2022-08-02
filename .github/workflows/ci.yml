@@ -6,9 +6,6 @@ on:
   pull_request:
     branches: [ "main" ]
 
-env:
-  REACT_APP_API_KEY: ${{ secrets.REACT_APP_API_KEY }}
-
 jobs:
   build:
 
@@ -57,4 +54,3 @@ jobs:
         user_email: 'github-actions[bot]@users.noreply.github.com'
         github_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
         repository: ${{ github.repository }}
-        REACT_APP_API_KEY: ${{ secrets.REACT_APP_API_KEY }}
