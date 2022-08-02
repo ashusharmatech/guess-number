@@ -1,13 +1,16 @@
 {
   "name": "guess-game",
   "version": "0.0.0",
+  "homepage": "https://ashusharmatech.github.io/guess-number",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
   },
   "private": true,
   "dependencies": {
